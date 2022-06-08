@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DiegoCantarell/twitter/issues"
   },
-  "homepage": "https://github.com/DiegoCantarell/twitter#readme"
+  "homepage": "https://github.com/DiegoCantarell/twitter#readme",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
 }
