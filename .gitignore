@@ -1,1 +1,4 @@
 **/node_modules 
+app/models/.User.js.swp
+test/models/.User.test.js.swp
+
