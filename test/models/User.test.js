@@ -29,6 +29,7 @@ describe("Unit Test for User Class", () => {
 
 		user.setUsername = "Cantarell"
 		expect(user.username).toBe("Cantarell")
+		
 
 		user.setBio = "New Bio"
 		expect(user.bio).toBe("New Bio")
