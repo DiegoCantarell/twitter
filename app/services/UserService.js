@@ -12,6 +12,10 @@ class UserService{
 	static updateUserUsername(User,newUsername){
 		User.username = newUsername
 	}
+	static getAllUsernames([User1,User2,User3]){
+		let usernames = [User1.username,User2.username,User3.username]
+		return usernames
+	}
 
 }
 module.exports = UserService
