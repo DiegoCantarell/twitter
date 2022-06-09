@@ -9,6 +9,9 @@ class UserService{
 		let userInfoInList = [ User.id, User.username, User.name, "Sin bio" ]
 		return userInfoInList
 	}
+	static updateUserUsername(User,newUsername){
+		User.username = newUsername
+	}
 
 }
 module.exports = UserService
