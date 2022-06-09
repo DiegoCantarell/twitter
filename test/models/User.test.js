@@ -2,6 +2,7 @@
 const User = require('./../../app/models/User')
 
 describe("Unit Test for User Class", () => {
+	/*Requirement 2*/
 	test('Create an User Object', () =>{
 		//Here goes the code to use in the app
 		const user = new User(1,"diegocantarell","Diego","Bio","dateCreated","lastUpdated")
