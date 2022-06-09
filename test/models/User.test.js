@@ -15,6 +15,7 @@ describe("Unit Test for User Class", () => {
 		expect(user.dateCreated).not.toBeUndefined()
 		expect(user.lastUpdated).not.toBeUndefined()
 	});
+	/*Requirement 3*/
 	test('Validate Getters', () =>{
 		const user = new User(1,"diegocantarell","Diego","Bio")
 		expect(user.getUsername).toBe("diegocantarell")
@@ -22,5 +23,15 @@ describe("Unit Test for User Class", () => {
 		expect(user.getDateCreated).not.toBeUndefined()
 		expect(user.getLastUpdated).not.toBeUndefined()
 	});
+	//Requirement 4
+	test('Validate Setters',() =>{
+		const user = new User(1, "diegocantarell", "Diego","Bio")
+
+		user.setUsername = "Cantarell"
+		expect(user.username).toBe("Cantarell")
+
+		user.setBio = "New Bio"
+		expect(user.bio).toBe("New Bio")
+	}); 
 
 })
