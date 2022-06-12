@@ -5,7 +5,7 @@ describe("Unit Test for User Class", () => {
 	/*Requirement 2*/
 	test('Create an User Object', () =>{
 		//Here goes the code to use in the app
-		const user = new User(1,"diegocantarell","Diego","Bio","dateCreated","lastUpdated")
+		const user = new User(1,"diegocantarell","Diego","error","Bio","dateCreated","lastUpdated")
 		//Here we evaluate and validate the results of the this code
 		//This is a comparison that is going to evaluate/equalize the left value with de right value (expected value)
 		expect(user.id).toBe(1)
@@ -18,7 +18,7 @@ describe("Unit Test for User Class", () => {
 	});
 	/*Requirement 3*/
 	test('Validate Getters', () =>{
-		const user = new User(1,"diegocantarell","Diego","Bio")
+		const user = new User(1,"diegocantarell","Diego","error","Bio")
 		expect(user.getUsername).toBe("diegocantarell")
 		expect(user.getBio).toBe("Bio")
 		expect(user.getDateCreated).not.toBeUndefined()
