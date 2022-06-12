@@ -1,4 +1,7 @@
 **/node_modules 
 app/models/.User.js.swp
 test/models/.User.test.js.swp
+app/views/.UserView.js.swp
+test/views/.UserView.test.js.swp
+
 
