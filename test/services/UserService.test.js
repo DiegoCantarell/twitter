@@ -3,11 +3,13 @@ const UserService = require('./../../app/services/UserService')
 describe('Test for UserService', () => {
 	//Requirement 1
 	test('1. Create a new user using the UserService', () => {
-		const user = UserService.create(1,"diegocantarell","Diego")
+		const user = UserService.create(1,"diegocantarell","Diego", "payload no existe ")
 		expect(user.username).toBe("diegocantarell")
 		expect(user.name).toBe("Diego")
 		expect(user.id).toBe(1)
 		expect(user.bio).not.toBeUndefined()
+		expect(user.error).toMatch(/payload no existe/)
+
 	})
 	//Requirement 2
 	test('2. Get all user data in a list', () => {
