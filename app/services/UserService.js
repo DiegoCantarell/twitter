@@ -1,8 +1,8 @@
 const User = require ('./../models/User')
 
 class UserService{
-	static create(id,username,name){
-		return new User(id, username, name, "Sin bio")
+	static create(id,username,name, error){
+		return new User(id, username, name, error, "Sin bio")
 	}
 
 	static  getInfo(User){
