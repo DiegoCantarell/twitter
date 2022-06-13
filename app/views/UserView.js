@@ -9,6 +9,7 @@ class UserView{
             let flag = 0, count = 0
             for (const value in payload) {
                 count ++
+
             }
             for (const value in payload) {
                 if(payload[value] === null)
@@ -17,11 +18,11 @@ class UserView{
                     break
             }
             if(flag == 0 && count === 3){
-                 return UserService.create(1,"diegocantarell","Diego","valor valido")
+                 return UserService.create(payload.id,payload.username,payload.name,"valor valido")
 
             }
             else if (flag == 1 || count < 3) { 
-                 return UserService.create(1,"diegocantarell","Diego","necesitan tener un valor valido")
+                 return UserService.create(0,"noUsername","noName","necesitan tener un valor valido")
 
             }
                // return UserService.create(1,"diegocantarell","Diego","necesitan tener un valor valido")
