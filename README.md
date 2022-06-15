@@ -3,7 +3,7 @@
 # Sprint 1
 
 * Adding Models
-* Accomplishing 4 requirements 
+* Accomplishing 3 requirements 
 
 # Sprint 2
 
